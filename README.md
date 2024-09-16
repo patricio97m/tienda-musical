@@ -1,4 +1,7 @@
-# Proyecto final taller web II UNLAM 
+# Tienda musical
+
+## Descripción
+E-commerce con temática de tienda de instrumentos musicales. Con funcionalidades de carrito, filtrado de instrumentos y creación de usuarios.
 
 ## Para ejecutar Angular
 > Primero abrir la terminal en la carpeta "front"
