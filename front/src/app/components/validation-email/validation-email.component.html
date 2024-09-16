@@ -1,0 +1,22 @@
+<main class="d-flex flex-column h-100 mb-auto pt-4">
+    <div class="contenedorForm">
+        <h1 class="text-guitar-carrousel py-2 fs-4">Confirmar cuenta</h1>
+      <form [formGroup]="confirmForm" (ngSubmit)="onSubmit()" class="bg-table-primary">
+        <div class="mb-3">
+          <label for="username" class="form-label text-common-carrousel">Nombre de usuario</label>
+          <input type="text" formControlName="username" class="form-control" name="username" id="username" aria-describedby="usernameHelp" placeholder="Ingrese su nombre de usuario">
+        </div>
+        <div class="mb-3">
+          <label for="confirmationCode" class="form-label text-common-carrousel">Codigo de verificacion</label>
+          <input type="text" formControlName="confirmationCode" class="form-control" name="confirmationCode" id="confirmationCode" placeholder="Ingrese su codigo de verificacion">
+        </div>
+        <div *ngIf="errorMessage" class="error-message">
+            {{ errorMessage }}
+        </div>
+        <div class="text-center mx-auto">
+          <button type="submit" class="btn btn-success text-common px-4" [disabled]="confirmForm.invalid">Verificar Cuenta</button>
+        </div>
+      </form>
+    </div>
+    
+    </main>

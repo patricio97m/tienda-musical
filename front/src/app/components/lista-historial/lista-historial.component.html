@@ -1,0 +1,23 @@
+<div class="pt-3 pb-5">
+  <div class="mt-3">
+    <h3 class="text-guitar text-center titulo pb-2 fw-bold">Historial</h3>
+  </div>
+  <table class="table bg-main " *ngIf="todasLasCompras?.length">
+    <thead>
+      <tr class="bg-table-primary ">
+        <th scope="col" class="bg-table-primary text-common-carrousel text-center  fw-bold">Fecha</th>
+        <th scope="col" class="bg-table-primary text-common-carrousel text-center  fw-bold">Descripción</th>
+        <th scope="col" class="bg-table-primary text-common-carrousel text-center  fw-bold">Precio Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let compra of todasLasCompras; let i = index">
+        <th scope="row" class="bg-table-secondary text-common  fw-bold">{{ compra.fechaCompra }}</th> <td class="bg-table-secondary text-common text-center rounded fw-bold">{{ compra.nombreProductos }}</td>
+        <td class="bg-table-secondary text-common text-center  fw-bold">{{ compra.precioTotal | currency }}</td> </tr>
+    </tbody>
+  </table>
+  <div *ngIf="!todasLasCompras?.length">
+    <h3 class="text-common text-center fw-bold fs-5">¡No se encontraron compras!</h3>
+  </div>
+</div>
+

@@ -1,0 +1,147 @@
+.contenedorForm {
+    display: flex;
+    margin: auto;
+    width: 50%;
+    background-color: #7c716e;
+    border-radius: 1em;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    color: white;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.form-control {
+    padding: 10px 20px;
+}
+
+.btn-success {
+    background-color: black;
+    color: white;
+}
+
+.text-card-descrip {
+    color: white;
+}
+
+.btn-primary {
+
+    border: 1px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+
+}
+
+.btn-primary:hover {
+
+    transform: scale(1.1)
+}
+
+a {
+
+    text-decoration: none;
+}
+
+.usuario {
+    width: 70%;
+    margin: auto;
+}
+
+.informacionPersonal {
+    text-align: center;
+}
+
+.fotoDePerfil {
+    width: 4em;
+}
+
+.table {
+    width: 60%;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 5em;
+}
+
+.btn-primary {
+    border: 1px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.1)
+}
+
+
+.text-guitar {
+    font-optical-sizing: auto;
+    font-weight: 0.5em;
+    font-style: normal;
+}
+
+.text-guitar-carrousel {
+    font-optical-sizing: auto;
+    font-weight: 0.5em;
+    font-style: normal;
+    color: white;
+
+}
+
+.text-common {
+    font-optical-sizing: auto;
+    font-weight: 0.1em;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.text-common-carrousel {
+    font-optical-sizing: auto;
+    font-weight: 0.1em;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.text-button-common {
+    font-optical-sizing: auto;
+    font-weight: 0.1em;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.text-card-descrip {
+    font-optical-sizing: auto;
+    font-weight: 0.1em;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+}
+
+
+.titulo {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.pt-4 {
+    padding-bottom: 1.5rem !important;
+}

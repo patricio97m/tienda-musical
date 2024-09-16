@@ -1,0 +1,37 @@
+.card{
+  width: 15rem;
+
+}
+
+.card-body{
+  font-size: 0.8em;
+  background-color: #7c716e;
+  color: white;
+}
+
+.text-card-common {
+
+  font-optical-sizing: auto;
+  font-weight: 0.1em;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+
+  height: 150px;
+ }
+
+ .text-card-descrip {
+  font-optical-sizing: auto;
+  font-weight: 0.1em;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+
+ }
+
+
+.card-img-top {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+}

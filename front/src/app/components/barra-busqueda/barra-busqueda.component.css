@@ -1,0 +1,8 @@
+.btn-outline-success{
+    color: white;
+    border-color: #F5F5F5;
+}
+
+.btn-outline-success:hover {
+    background-color: #020202; /* Color cuando se pasa el mouse */
+}

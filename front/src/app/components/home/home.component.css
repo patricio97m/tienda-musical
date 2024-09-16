@@ -1,0 +1,119 @@
+.contenedorCartas {
+  margin: auto;
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+
+}
+
+.titulo {
+  border-bottom: 0.2em solid #000000;
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.card {
+  width: 12rem;
+
+}
+
+.imagenMarcas {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(1);
+}
+
+.list-unstyled {
+  font-size: 1.075rem;
+  /* Ajusta el tamaño según sea necesario */
+}
+
+.bg-grey {
+  background-color: rgba(0, 0, 0, 0.75);
+  
+}
+
+a {
+  color: inherit;
+  /* Hereda el color del texto del elemento padre */
+  text-decoration: none;
+  /* Quita el subrayado */
+  background-color: transparent;
+  /* Fondo transparente */
+  padding: 0;
+  /* Sin relleno interno */
+  margin: 0;
+  /* Sin margen */
+  font: inherit;
+  /* Hereda la fuente del elemento padre */
+}
+
+
+
+.text-guitar {
+  font-optical-sizing: auto;
+  font-weight: 0.5em;
+  font-style: normal;
+  color: #000000;
+}
+
+.text-guitar-carrousel {
+  font-optical-sizing: auto;
+  font-weight: 0.5em;
+  font-style: normal;
+  color: white;
+
+}
+
+.text-common {
+  font-optical-sizing: auto;
+  font-weight: 0.1em;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+
+}
+
+.text-common-carrousel {
+  font-optical-sizing: auto;
+  font-weight: 0.1em;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.carousel-item {
+  cursor: pointer;
+  
+}
+.btn-close {
+  filter: invert(1);
+  background-color: #7c716e;
+}
+
+.btn-modal {
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: #7c716e;
+  color: white;
+}
+.modal-header{
+  background-color: #7c716e;
+}
+.modal-title{
+  color: white;
+}

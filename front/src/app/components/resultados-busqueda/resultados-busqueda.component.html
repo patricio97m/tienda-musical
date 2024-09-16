@@ -1,0 +1,12 @@
+<h1 class="text-guitar py-5 titulo my-0">Resultados de búsqueda</h1>
+<div *ngIf="productos.length > 0; else noResults" class="d-flex justify-content-center mt-4 mx-auto flex-wrap">
+  <div class="card mx-5 mb-3" *ngFor="let producto of productos">
+    <app-producto-tarjeta [producto]="producto"></app-producto-tarjeta>
+  </div>
+</div>
+<ng-template #noResults>
+  <div class="text-center mt-4">
+    <h3>No hay productos que coincidan con la búsqueda.</h3>
+  </div>
+</ng-template>
+

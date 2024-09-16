@@ -1,0 +1,129 @@
+.contenedorCartas{
+    margin: auto;
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+  
+  }
+  
+  .titulo{
+    border-bottom: 0.2em solid;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  
+  .card{
+    width: 12rem;
+    
+  }
+  
+  .card-body{
+    font-size: 0.8em;
+  }
+  
+  .imagenMarcas{
+   width: 90%;
+   margin: auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+  }
+  
+  .tarjetaMarcas{
+    width: 12em;
+   margin-bottom: 1em;
+   text-align: center;
+  }
+  
+  .carousel-control-prev, .carousel-control-next {
+   filter: invert(1);
+  }
+  
+  .list-unstyled{
+   font-size: 1.075rem; /* Ajusta el tamaño según sea necesario */
+  }
+  
+  .carousel-image{
+   width: 80%;
+   height: 25rem;
+   object-fit: cover;
+  }
+  
+  .bg-grey{
+   background-color: rgba(0, 0, 0, 0.75);
+  }
+  
+  a {
+    color: inherit; /* Hereda el color del texto del elemento padre */
+    text-decoration: none; /* Quita el subrayado */
+    background-color: transparent; /* Fondo transparente */
+    padding: 0; /* Sin relleno interno */
+    margin: 0; /* Sin margen */
+    font: inherit; /* Hereda la fuente del elemento padre */
+  }
+
+  
+  
+   .text-guitar {
+     
+     font-optical-sizing: auto;
+     font-weight: 0.5em;
+     font-style: normal;
+    
+   }
+
+   .text-guitar-carrousel {
+   
+    font-optical-sizing: auto;
+    font-weight: 0.5em;
+    font-style: normal;
+   
+  }
+  
+  .text-common {
+
+   font-optical-sizing: auto;
+   font-weight: 0.1em;
+   font-style: normal;
+   font-variation-settings:
+     "wdth" 100;
+  
+  }
+
+  .text-common-carrousel {
+   
+    font-optical-sizing: auto;
+    font-weight: 0.1em;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+   
+   }
+
+  .text-card-common {
+   
+    font-optical-sizing: auto;
+    font-weight: 0.1em;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  
+   }
+
+   .text-card-descrip {
+ 
+    font-optical-sizing: auto;
+    font-weight: 0.1em;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+   
+   }
+  
+ 
+   
+  

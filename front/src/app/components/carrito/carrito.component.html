@@ -1,0 +1,38 @@
+<main class="bg-main d-flex flex-column h-100 mb-auto">
+  <div *ngIf="carrito.length > 0; else emptyCart">
+    <table class="table bg-main rounded">
+        <thead>
+          <tr class="bg-table-primary ">
+            <th scope="col" class="bg-table-primary text-common-carrousel text-center ">Articulo</th>
+            <th scope="col" class="bg-table-primary text-common-carrousel text-center">Precio</th>
+            <th scope="col" class="bg-table-primary text-common-carrousel text-center"></th>
+          </tr>
+        </thead>
+        <tbody >
+          <tr class="bg-table-secondary" *ngFor="let product of carrito">
+            <th scope="col" class="bg-table-secondary text-common  fw-bold">{{ product.nombre }}</th>
+            <td class="bg-table-secondary text-common text-center  fw-bold ">${{ product.precio }}</td>
+            <td class="bg-table-secondary text-common text-center  col-md-2"> <button class="btn btn-eliminar text-white fw-bold" (click)="eliminarDelCarrito(product.id)">Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot class="bg-table-secondary ">
+          <tr class="bg-table-secondary text-common ">
+            <th scope="col" class="text-right bg-table-brown text-result  fw-bold">TOTAL:</th>
+            <td class="bg-table-brown text-result text-center  fw-bold">${{ totalCarrito() }}</td>
+            <td class="bg-table-brown text-center  col-md-2">
+              <button class="btn btn-vaciar text-common fw-bold" (click)="limpiarCarrito()">Vaciar Carrito</button>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    <div class="col-md-3 mx-auto mb-2 text-center">
+      <button class="btn btn-success text-white fw-bold px-4 py-3" (click)="finalizarCompra()">Finalizar compra</button>
+    </div>
+  </div>
+  <ng-template #emptyCart>
+    <div class="text-center mt-3 p-3">
+      <h2 class="text-guitar py-5 titulo my-0">Aún no hay productos añadidos al carrito. Volver al <a routerLink="/home">Inicio</a></h2>
+    </div>
+</ng-template>
+</main>

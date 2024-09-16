@@ -1,0 +1,28 @@
+<main class="d-flex flex-column h-100 mb-auto pt-4">
+<div class="contenedorForm">
+    <h1 class="text-guitar-carrousel py-2 fs-4">Iniciar Sesion</h1>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="bg-table-primary">
+    <div class="mb-3">
+      <label for="username" class="form-label text-common-carrousel">Nombre de usuario</label>
+      <input type="text" class="form-control" formControlName="username" name="username" id="username" aria-describedby="usernameHelp" placeholder="Ingrese su nombre de usuario">
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label text-common-carrousel">Contraseña</label>
+      <input type="password" formControlName="password" class="form-control" name="password" id="password" placeholder="Ingrese su contraseña">
+    </div>
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input text-common-carrousel" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
+    </div>
+    <div class="text-center mx-auto">
+      <button type="submit" class="btn btn-primary text-common px-4" [disabled]="loginForm.invalid" >Iniciar Sesion</button>
+    </div>
+  </form>
+  <a href="" class="text-forgot-password">Olvidé mi contraseña</a>
+  <a href="/signup" class="text-card-descrip">No tengo cuenta</a>
+</div>
+
+</main>

@@ -1,0 +1,18 @@
+<li class="d-flex align-items-center">
+    <input class="form-control me-2" type="text" [(ngModel)]="busqueda" (keyup.enter)="buscar()"
+           placeholder="Buscar productos..." id="busquedaInput">
+    <button class="btn btn-outline-success fw-bolder" (click)="buscar()">
+      <i class="fas fa-search"></i>
+    </button>
+    <div class="nav-item dropdown mx-2 align-items-center btn btn-outline-success fw-bolder">
+        <a class="nav-link dropdown-toggle m-0 p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Categorías
+        </a>
+        <ul class="dropdown-menu">
+            <li class="dropdown-item" *ngFor="let categoria of categorias" (click)="buscarPorCategoria(categoria)"><a>{{ categoria }}</a></li>
+        </ul>
+    </div>
+</li>
+
+
+

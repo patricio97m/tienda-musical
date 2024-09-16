@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+NL:wght@100..400&display=swap');
+
+.app-content {
+    flex: 1;
+    min-height: calc(100vh - 30vh);
+  }
+
+  .bg-main {
+    background-color: #ffffff;
+  }
+
+  

@@ -1,0 +1,30 @@
+.bg-primary-brown{
+  background-color: #7c716e;
+ }
+
+ .text-guitar {
+  color: white;
+   font-optical-sizing: auto;
+   font-weight: 0.5em;
+   font-style: normal;
+ }
+
+.text-common {
+ font-optical-sizing: auto;
+ font-weight: 0.1em;
+ font-style: normal;
+ font-variation-settings:
+   "wdth" 100;
+}
+
+
+.btn-outline-success{
+  color: white;
+  border-color: #F5F5F5;
+}
+
+.btn-outline-success:hover {
+  background-color: #020202; /* Color cuando se pasa el mouse */
+} 
+
+  

@@ -1,0 +1,28 @@
+
+  .bg-primary-brown{
+   background-color: #7c716e;
+  }
+
+  .text-guitar {
+   
+    font-optical-sizing: auto;
+    font-weight: 0.5em;
+    font-style: normal;
+  color: white;
+  }
+
+.text-common {
+  font-optical-sizing: auto;
+  font-weight: 0.1em;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+ 
+}
+
+
+  
+  
+
+
+  

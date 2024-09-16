@@ -1,0 +1,16 @@
+<main>
+  <div class="product-container">
+      <div class="product-image">
+        <img [src]="'../assets/img/productos/' + productoPrincipal.imagen" alt="Producto">
+      </div>
+      <div class="product-details">
+        <h1>{{productoPrincipal.nombre}}</h1>
+        <p class="product-price">$ {{productoPrincipal.precio}}
+      </p>
+        <p class="product-description">{{productoPrincipal.descripcion}}</p>
+        <button #addToCartButton class="buy-button" (click)="addToCart()">Añadir al carrito</button>
+      </div>
+    </div>
+
+    <app-lista-recomendados [categoria]="productoPrincipal.categoria" [id]="productoPrincipal.id"></app-lista-recomendados>
+</main>

@@ -1,0 +1,16 @@
+<div class="card">
+  <a [href]="'/product/' + producto.id">
+    <img [src]="'../assets/img/productos/' + producto.imagen" [alt]="producto.nombre" class="card-img-top img-fluid">
+  </a>
+  <div class="card-body text-card-common">
+    <h5 class="card-title">$ {{producto.precio}}</h5>
+    <p class="card-text text-card-descrip">{{producto.nombre}}</p>
+    <div class="d-flex justify-content-end align-items-center">
+      <app-boton-ver class="mx-1" [product]="producto"></app-boton-ver>
+      <app-boton-carrito class="mx-1" [product]="producto"></app-boton-carrito>
+    </div>
+  </div>
+</div>
+
+
+

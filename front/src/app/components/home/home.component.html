@@ -1,0 +1,175 @@
+<main class="py-5 h-100 bg-main">
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000" (click)="navegarACategoria('Cuerdas')">
+          <img src="../assets/img/cuerdas.jpeg" class="carousel-image d-block w-75 mx-auto h-50" alt="cuerdas">
+          <div class="carousel-caption d-none d-md-block bg-grey">
+            <h5 class="text-guitar-carrousel">Cuerdas</h5>
+            <p class="text-common-carrousel">Guitarras, bajos y otros instrumentos de cuerda</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000" (click)="navegarACategoria('Percusión')">
+          <img src="../assets/img/percusion.jpeg" class="carousel-image d-block w-75 mx-auto h-50" alt="percusion">
+          <div class="carousel-caption d-none d-md-block bg-grey">
+            <h5 class="text-guitar-carrousel">Percusion</h5>
+            <p class="text-common-carrousel">Baterías de calidad y gran variedad de instrumentos de percusión</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000" (click)="navegarACategoria('Vientos')">
+          <img src="../assets/img/vientos.jpeg" class="carousel-image d-block w-75 mx-auto h-50" alt="vientos">
+          <div class="carousel-caption d-none d-md-block bg-grey">
+            <h5 class="text-guitar-carrousel">Vientos</h5>
+            <p class="text-common-carrousel">Ármonicas, sáxofones y cualquier otro instrumento de viento que estes buscando</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000" (click)="navegarACategoria('Teclados')">
+          <img src="../assets/img/teclados.jpeg" class="carousel-image d-block w-75 mx-auto h-50" alt="teclados">
+          <div class="carousel-caption d-none d-md-block bg-grey">
+            <h5 class="text-guitar-carrousel">Teclados</h5>
+            <p class="text-common-carrousel">Desde pianos acústicos, hasta sintetizadores y controladores MIDI</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000" (click)="navegarACategoria('Efectos y Accesorios')">
+          <img src="../assets/img/equipoyaccesorios.jpeg" class="carousel-image d-block w-75 mx-auto h-50" alt="equipos y accesorios">
+          <div class="carousel-caption d-none d-md-block bg-grey">
+            <h5 class="text-guitar-carrousel">Efectos y accesorios</h5>
+            <p class="text-common-carrousel">Cables, pedales, microfonos, etc. Todo para equipar tu set de grabacion</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <div class="productos">
+      <div class="titulo">
+        <p class="text-guitar fw-bold">Productos</p>
+      </div>
+      <div id="carouselExample1" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="contenedorCartas">
+              <div class="card" *ngFor="let producto of productos.slice(0,4)">
+                <app-producto-tarjeta [producto]="producto"></app-producto-tarjeta>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="contenedorCartas">
+              <div class="card" *ngFor="let producto of productos.slice(4,8)">
+                <app-producto-tarjeta [producto]="producto"></app-producto-tarjeta>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="productos">
+        <div class="titulo">
+      <p class="text-guitar fw-bold">Ofertas</p>
+      </div>
+      <div id="carouselExample2" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="contenedorCartas">
+              <div class="card" *ngFor="let producto of productos.slice(8,12)">
+                <app-producto-tarjeta [producto]="producto"></app-producto-tarjeta>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="contenedorCartas" >
+              <div class="card" *ngFor="let producto of productos.slice(12,16)">
+                <app-producto-tarjeta [producto]="producto"></app-producto-tarjeta>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="marcas">
+      <div class="titulo">
+        <p class="text-guitar fw-bold">Marcas</p>
+        </div>
+      <div id="carouselExample3" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="imagenMarcas">
+            <div class="tarjetaMarcas"> <img src="https://bairesrocks.vteximg.com.br/arquivos/ids/168381/Logos-07.png?v=637292145882070000" alt=""></div>
+      <div class="tarjetaMarcas"> <img src="https://bairesrocks.vteximg.com.br/arquivos/ids/168384/Logos-09.png?v=637292147513830000" alt=""></div>
+      <div class="tarjetaMarcas"> <img src="https://bairesrocks.vteximg.com.br/arquivos/ids/168385/Logos-11.png?v=637292148339970000" alt=""></div>
+      <div class="tarjetaMarcas"> <img src="https://bairesrocks.vteximg.com.br/arquivos/ids/168402/Logos-30.png?v=637292163597170000" alt=""></div>
+          </div>
+        </div>
+          <div class="carousel-item">
+            <div class="imagenMarcas">
+            <div class="tarjetaMarcas"> <img src="https://bairesrocks.vteximg.com.br/arquivos/ids/168411/Logos-37.png?v=637292169826570000" alt=""></div>
+      <div class="tarjetaMarcas"> <img src="https://bairesrocks.vteximg.com.br/arquivos/ids/168382/Logos-08.png?v=637292146670630000" alt=""></div>
+      <div class="tarjetaMarcas"> <img src="https://bairesrocks.vteximg.com.br/arquivos/ids/168383/Logos-10.png?v=637292147076500000" alt=""></div>
+      <div class="tarjetaMarcas"> <img src="https://bairesrocks.vteximg.com.br/arquivos/ids/168409/Logos-35.png?v=637292169114030000" alt=""></div>
+          </div>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true" #miModal>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel">Compra Exitosa</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          El resumen de tu compra se verá en tu perfil.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-modal" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>

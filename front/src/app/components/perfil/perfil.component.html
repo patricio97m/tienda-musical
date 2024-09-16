@@ -1,0 +1,36 @@
+<main class="d-flex flex-column h-100 mb-auto">
+  <div>
+    <div class="mt-3">
+      <h3 class="text-guitar text-center titulo pb-2 fw-bold">Usuario</h3>
+    </div>
+    <div *ngIf="!userInfo; else userInfoTemplate" class="text-center text-guitar">
+      <h4>Cargando información...</h4>
+    </div>
+    <ng-template #userInfoTemplate>
+      <div class="mt-3 bg-table-primary  col-md-6 mx-auto mb-3 py-4 px-5">
+          <div class="d-flex flex-column px-5 pt-2">
+              <div class="d-flex justify-content-center align-items-center pt-4 pb-2 linea-user">
+                <i class="fa-solid fa-user mx-1 icono-user"></i>
+                <p class="text-guitar-tittle mx-2 fw-bold mb-0">{{ user['cognito:username'] | titlecase }}</p>
+              </div>
+              <div class="d-flex justify-content-start align-items-center pt-4 pb-2 linea">
+                <i class="fa-solid fa-address-card mx-1"></i>
+                <p class="text-guitar-carrousel mx-2 mb-0">{{ userInfo.name | titlecase }}{{ userInfo.family_name | titlecase }}</p>
+              </div>
+              <div class="d-flex justify-content-start align-items-center pt-3 pb-2 linea">
+                <i class="fa-solid fa-house mx-1"></i>
+                <p class="text-guitar-carrousel mx-2 mb-0">{{ userInfo.address }}</p>
+              </div>
+              <div class="d-flex justify-content-start align-items-center pt-3 pb-2 linea">
+                <i class="fas fa-envelope mx-1"></i>
+                <p class="text-guitar-carrousel mb-0 mx-2">{{ userInfo.email }}</p>
+              </div>
+            <div class="d-flex justify-content-center align-items-center my-3 py-3">
+              <a *ngIf="userInfo"  (click)="logout()" class="btn btn-primary text-common mb-0 text-decoration-none mx-2 my-3">Cerrar sesion</a>
+            </div>
+        </div>
+      </div>
+      <app-lista-historial [user]="user"></app-lista-historial>
+    </ng-template>
+  </div>
+  </main>

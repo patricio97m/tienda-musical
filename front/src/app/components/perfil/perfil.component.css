@@ -1,0 +1,119 @@
+.usuario {
+    width: 70%;
+    margin: auto;
+}
+
+.fotoDePerfil {
+    width: 4em;
+}
+
+.table {
+    width: 60%;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 5em;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.btn-primary:hover {
+
+    transform: scale(1.1)
+}
+
+.text-guitar {
+    font-optical-sizing: auto;
+    font-weight: 0.5em;
+    font-style: normal;
+
+}
+
+.text-guitar-carrousel {
+    font-optical-sizing: auto;
+    font-weight: 0.5em;
+    font-style: normal;
+
+}
+
+.text-common {
+
+    font-optical-sizing: auto;
+    font-weight: 0.1em;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+}
+
+.text-common-carrousel {
+
+    font-optical-sizing: auto;
+    font-weight: 0.1em;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+}
+
+.text-button-common {
+
+    font-optical-sizing: auto;
+    font-weight: 0.1em;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+}
+
+.text-card-descrip {
+
+    font-optical-sizing: auto;
+    font-weight: 0.1em;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+}
+
+.titulo {
+
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.text-guitar-tittle {
+
+    font-optical-sizing: auto;
+    font-weight: 0.5em;
+    font-style: normal;
+
+}
+
+.linea-user {
+    border-bottom: 0.2em solid;
+    background-color: #7c716e;
+    color: white;
+}
+
+.linea {
+    border-bottom: 0.1em solid;
+   
+
+}
+
+
+.icono-user {
+    color: #ffffff;
+    font-size: 1.5em;
+    padding-bottom: 0.2em;
+}

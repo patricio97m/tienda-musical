@@ -1,0 +1,134 @@
+<main class="d-flex flex-column h-100 mb-auto pt-4">
+  <div class="contenedorForm">
+    <h1 class="text-guitar-carrousel py-2 fs-4">Registrate</h1>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="bg-table-primary">
+      <div class="mb-3">
+        <label for="username" class="form-label text-common-carrousel">Nombre de usuario</label>
+        <input
+          type="text"
+          class="form-control"
+          id="username"
+          [(ngModel)]="username"
+          name="username"
+          formControlName="username"
+          aria-describedby="nameHelp"
+          placeholder="Ingrese su nombre de usuario"
+        />
+        <div *ngIf="registerForm.get('username')?.touched">
+          <small *ngIf="registerForm.get('username')?.errors?.['required']">El nombre de usuario es requerido</small>
+          <small *ngIf="registerForm.get('username')?.errors?.['minlength']">El nombre de usuario debe tener mas de 5 caracteres</small>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label text-common-carrousel">Email</label>
+        <input
+          formControlName="email"
+          type="email"
+          [(ngModel)]="email"
+          name="email"
+          class="form-control"
+          id="email"
+          aria-describedby="emailHelp"
+          placeholder="Ingrese su correo electronico"
+        />
+        <div *ngIf="registerForm.get('email')?.invalid && registerForm.get('email')?.touched">
+          <small *ngIf="registerForm.get('email')?.errors?.['required']">El email es requerido</small>
+          <small *ngIf="registerForm.get('email')?.errors?.['email']">El email debe ser valido</small>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label text-common-carrousel">Contraseña</label>
+        <input
+          type="password"
+          formControlName="password"
+          [(ngModel)]="password"
+          name="password"
+          class="form-control"
+          id="exampleInputPassword1"
+          placeholder="Ingrese su contraseña"
+        />
+        <div *ngIf="registerForm.get('password')?.invalid &&registerForm.get('password')?.touched">
+          <small *ngIf="registerForm.get('password')?.errors?.['required']">La contraseña es requerida</small>
+          <small *ngIf="registerForm.get('password')?.errors?.['minlength']">La contraseña debe tener minimo 8 caracteres</small>
+          <small *ngIf="registerForm.get('password')?.errors?.passwordStrength">
+            La contraseña debe tener al menos 8 caracteres, incluir un número,
+            una mayúscula, una minúscula y un carácter especial.</small>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="confirmPassword" class="form-label text-common-carrousel">Repetir Contraseña</label>
+        <input
+          type="password"
+          formControlName="confirmPassword"
+          class="form-control"
+          id="confirmPassword"
+          placeholder="Ingrese su contraseña"
+        />
+        <div *ngIf="registerForm.get('confirmPassword')?.touched">
+          <small *ngIf="registerForm.get('confirmPassword')?.errors?.['required']">Repetir contraseña es requerido</small>
+          <small *ngIf="registerForm.errors?.['mismatch']">Las contraseñas no coinciden</small>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="name" class="form-label text-common-carrousel">Nombre</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          [(ngModel)]="name"
+          name="name"
+          formControlName="name"
+          aria-describedby="nameHelp"
+          placeholder="Ingrese su nombre"
+        />
+        <div *ngIf="registerForm.get('name')?.touched">
+          <small *ngIf="registerForm.get('name')?.errors?.['required']">Nombre es requerido</small>
+          <small *ngIf="registerForm.get('name')?.errors?.['name']">El nombre debe ser válido</small>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="family_name" class="form-label text-common-carrousel">Apellido</label>
+        <input
+          type="text"
+          class="form-control"
+          id="family_name"
+          [(ngModel)]="family_name"
+          name="family_name"
+          formControlName="family_name"
+          aria-describedby="nameHelp"
+          placeholder="Ingrese su apellido"
+        />
+        <div *ngIf="registerForm.get('name')?.touched">
+          <small *ngIf="registerForm.get('family_name')?.errors?.['required']">Apellido es requerido</small>
+          <small *ngIf="registerForm.get('family_name')?.errors?.['family_name']">El apellido debe ser válido</small>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="address" class="form-label text-common-carrousel">Dirección</label>
+        <input
+          type="text"
+          class="form-control"
+          id="address"
+          [(ngModel)]="address"
+          name="address"
+          formControlName="address"
+          aria-describedby="nameHelp"
+          placeholder="Ingrese su dirección"
+        />
+        <div *ngIf="registerForm.get('address')?.touched">
+          <small *ngIf="registerForm.get('address')?.errors?.['required']">Dirección es requerido</small>
+          <small *ngIf="registerForm.get('address')?.errors?.['address']">La dirección debe ser válida</small>
+        </div>
+      </div>
+      <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+      <div class="text-center mx-auto">
+        <button
+          type="submit"
+          class="btn btn-success text-common px-4"
+          [disabled]="registerForm.invalid">Registrarse
+        </button>
+      </div>
+    </form>
+    <a href="/login" class="text-card-descrip">Ya tengo cuenta</a>
+  </div>
+</main>

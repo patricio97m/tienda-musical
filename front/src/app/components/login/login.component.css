@@ -1,0 +1,141 @@
+.contenedorForm {
+    display: flex;
+    margin: auto;
+    width: 50%;
+    border-radius: 1em;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    background-color: #7c716e;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    color: white;
+}
+
+.form-control {
+    padding: 10px 20px;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+
+}
+
+.btn-primary:hover {
+    transform: scale(1.1)
+}
+
+.error-message {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.usuario {
+    width: 70%;
+    margin: auto;
+}
+
+.informacionPersonal {
+    text-align: center;
+}
+
+.fotoDePerfil {
+    width: 4em;
+}
+
+.table {
+    width: 60%;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 5em;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.1)
+}
+
+.text-forgot-password {
+    color: white;
+}
+
+.text-guitar {
+    font-optical-sizing: auto;
+    font-weight: 0.5em;
+    font-style: normal;
+
+}
+
+.text-guitar-carrousel {
+    font-optical-sizing: auto;
+    font-weight: 0.5em;
+    font-style: normal;
+    color: white;
+}
+
+.text-common {
+    font-optical-sizing: auto;
+    font-weight: 0.1em;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+}
+
+.text-common-carrousel {
+    font-optical-sizing: auto;
+    font-weight: 0.1em;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+}
+
+.text-button-common {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 0.1em;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+}
+
+.text-card-descrip {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 0.1em;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    color: white;
+
+}
+
+.titulo {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}

@@ -1,0 +1,32 @@
+<div class="productos">
+    <div class="titulo">
+        <h3 class="text-guitar fw-bold">Productos relacionados</h3>
+    </div>
+    <div id="carouselExample1" class="carousel slide">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="contenedorCartas">
+            <div class="card" *ngFor="let producto of productos.slice(0, 4)">
+              <app-producto-tarjeta [producto]="producto"></app-producto-tarjeta>
+            </div>
+            </div>
+        </div>
+
+        <div class="carousel-item" *ngIf="productos.length > 4"> <div class="contenedorCartas">
+            <div class="card" *ngFor="let producto of productos.slice(4, 8)">
+              <app-producto-tarjeta [producto]="producto"></app-producto-tarjeta>
+            </div>
+            </div>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+</div>
+

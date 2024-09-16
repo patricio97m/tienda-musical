@@ -1,0 +1,13 @@
+.text-card-descrip {
+  font-optical-sizing: auto;
+  font-weight: 0.1em;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+color: white;
+background-color: rgb(39, 39, 39);
+}
+
+.fs-7 {
+  font-size: 0.8em;
+}

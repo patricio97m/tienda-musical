@@ -1,0 +1,26 @@
+<header class="bg-primary-brown py-4 px-1 mb-auto">
+  <div class="container-fluid m-0">
+    <div class="row">
+      <!-- Logo -->
+      <div class="col-2 align-items-center d-flex justify-content-center my-auto">
+        <a href="/" class="navbar-brand">
+          <img src="../assets/img/logo.png" alt="Logo" style="height: 4em;">
+        </a>
+      </div>
+      <!-- Barra de búsqueda -->
+      <div class="col-8 align-items-center my-auto">
+        <app-barra-busqueda></app-barra-busqueda>
+      </div>
+      <!-- Botones de carrito y perfil -->
+      <div class="col-2 align-items-center d-flex justify-content-end px-4 my-auto">
+        <a href="/carrito" class="btn btn-outline-success">
+          <i class="fas fa-shopping-cart"></i> <span class="badge ms-2 bg-danger" *ngIf="conteoProductos > 0">{{conteoProductos}}</span>
+        </a>
+        <a href="/perfil" class="btn btn-outline-success ms-2">
+          <span class="text-common"></span>
+          <i class="fas fa-user"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
